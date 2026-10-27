@@ -1,0 +1,16 @@
+schema_version: "1.1"
+name: verify-report-and-assign
+expected_outcome: |
+  roundup.md checks the six statements of report.md one by one against the provided files and
+  ends up with these verdicts: statement 1 (30 datasets, 12%) mostly right but needs correcting
+  (the table has 28 datasets and the average reduction recomputes to 11.4%); statement 2 (still
+  about 12% at 40% missing) wrong (about 4% in paper_supp_S2.csv); statement 3 (all training logs
+  public) cannot be verified from the files; statement 4 (MIT) wrong (the LICENSE file is AGPL-3.0,
+  the README badge is out of date); statement 5 (hyper-parameters tuned on OpenTab-30) wrong
+  (the README says five small in-house datasets); statement 6 (try ImputeFlow first) is a
+  recommendation and is not judged. The document opens with a short conclusion block whose counts
+  match the table, has at least one decision block with a recommended default, gives A and B
+  reading lists with answerable questions, lists what was not done, and gives no legal verdict on
+  the licence.
+context:
+  scaffold_script: place-files.sh

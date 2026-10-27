@@ -1,0 +1,4 @@
+GNU AFFERO GENERAL PUBLIC LICENSE
+Version 3, 19 November 2007
+
+(虚构仓库 TabFill 的 LICENSE 文件，评测用，只保留首部。)

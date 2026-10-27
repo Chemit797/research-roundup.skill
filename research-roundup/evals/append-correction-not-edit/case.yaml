@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: append-correction-not-edit
+expected_outcome: |
+  The correction is appended to errata.md as a new row numbered 4 (old statement, corrected value
+  11.4%, basis and date) without touching rows 1 to 3. old_doc.md is left as it was, including the
+  wrong 12%. The new row or the final message names what else in old_doc.md depends on the wrong
+  number, and the final message says the old document was not edited.
+context:
+  scaffold_script: place-files.sh

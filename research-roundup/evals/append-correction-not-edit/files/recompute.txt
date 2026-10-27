@@ -1,0 +1,3 @@
+paper_table3.csv: 28 datasets
+mean per-dataset relative RMSE reduction vs mean imputation = 0.1140 (11.4%)
+ratio-of-means reduction = 0.1140 (11.4%)
